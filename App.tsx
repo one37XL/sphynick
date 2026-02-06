@@ -161,29 +161,21 @@ const App: React.FC = () => {
       <section id="about" className="py-24 bg-white scroll-mt-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-16 items-center">
-            <div>
-              <h2 className="text-3xl font-bold mb-8 relative inline-block">
+            <div className="space-y-6">
+              <h2 className="text-3xl font-bold mb-2 relative inline-block">
                 About Me
                 <div className="absolute -bottom-2 left-0 w-1/2 h-1 bg-blue-600 rounded-full"></div>
               </h2>
-              <p className="text-xl text-gray-600 leading-relaxed mb-8">
-                Hi, I'm Nick. I am a detail-oriented and highly motivated Front-End Web Developer with a strong passion for web technologies and UI/UX design. 
-              </p>
-              <div className="space-y-4">
-                <p className="text-gray-600">
-                  Recent graduate with hands-on experience in creating responsive and visually appealing websites using modern front-end frameworks. Eager to apply my technical skills while continuing to learn and grow in the tech industry.
+              <div className="space-y-6 text-gray-600 leading-relaxed text-lg">
+                <p>
+                  I am a detail-oriented and highly motivated Full-Stack Web Developer with a passion for building seamless, user-centric digital experiences. As a recent graduate, I combine a strong foundation in modern front-end frameworks with a solid understanding of back-end architecture to create responsive, high-performing applications.
                 </p>
-                <div className="flex items-center gap-4 p-4 bg-gray-50 rounded-2xl border border-gray-100">
-                  <div className="bg-blue-100 p-3 rounded-xl">
-                    <svg className="w-6 h-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                    </svg>
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-gray-900">Unique Profile</h4>
-                    <p className="text-sm text-gray-500">I'm also certified in Plumbing (Grade One), giving me a practical problem-solving edge!</p>
-                  </div>
-                </div>
+                <p>
+                  My approach to development is defined by a practical problem-solving edge and a commitment to clean, scalable code. I enjoy bridging the gap between sophisticated design and functional logic, ensuring that every layer of the stack is optimized for the best possible user experience.
+                </p>
+                <p>
+                  I am eager to contribute my technical skills to a forward-thinking team while continuing to evolve alongside the latest industry standards.
+                </p>
               </div>
             </div>
             <div className="grid grid-cols-2 gap-4">
@@ -203,8 +195,8 @@ const App: React.FC = () => {
                   <span className="text-sm text-orange-800 font-medium">GenAI Expert</span>
                 </div>
                 <div className="bg-indigo-50 p-6 rounded-3xl text-center hover:shadow-md transition-shadow">
-                  <span className="block text-3xl font-bold text-indigo-600 mb-1">Plumbing</span>
-                  <span className="text-sm text-indigo-800 font-medium">Practical Eng.</span>
+                  <span className="block text-3xl font-bold text-indigo-600 mb-1">Node.js</span>
+                  <span className="text-sm text-indigo-800 font-medium">Back-End Arch</span>
                 </div>
               </div>
             </div>
