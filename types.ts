@@ -18,6 +18,8 @@ export interface Product {
   category: string;
   imageUrl: string;
   link: string;
+  colors?: string[];
+  sizes?: string[];
 }
 
 export interface FAQItem {
