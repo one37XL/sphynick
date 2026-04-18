@@ -77,6 +77,53 @@ export const PRODUCTS: Product[] = [
   }
 ];
 
+export const HOODIES: Product[] = [
+  {
+    id: 'h1',
+    name: 'Tech Minimalist Hoodie',
+    description: 'Premium heavyweight cotton hoodie with a minimalist tech-inspired design. Featuring bold black and white designs with black people.',
+    price: '950 KES',
+    category: 'Apparel',
+    imageUrl: 'https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&q=80&w=800',
+    link: '#',
+    colors: ['Midnight Black', 'Arctic White'],
+    sizes: ['S', 'M', 'L', 'XL', 'XXL']
+  },
+  {
+    id: 'h2',
+    name: 'AI Architect Hoodie',
+    description: 'Showcase your expertise with the AI Architect series. High-contrast black on white designs included.',
+    price: '950 KES',
+    category: 'Apparel',
+    imageUrl: 'https://images.unsplash.com/photo-1578587018452-892bacefd3f2?auto=format&fit=crop&q=80&w=800',
+    link: '#',
+    colors: ['Deep Navy', 'Charcoal', 'White'],
+    sizes: ['M', 'L', 'XL']
+  },
+  {
+    id: 'h3',
+    name: 'Open Source Advocate',
+    description: 'A tribute to the community. Featuring diverse black and white illustrations of black people.',
+    price: '950 KES',
+    category: 'Apparel',
+    imageUrl: 'https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?auto=format&fit=crop&q=80&w=800',
+    link: '#',
+    colors: ['Forest Green', 'Sand', 'Black', 'White'],
+    sizes: ['S', 'M', 'L', 'XL']
+  },
+  {
+    id: 'h4',
+    name: 'Binary Pulse Hoodie',
+    description: 'High-contrast design for those who live in the terminal. Black and white aesthetic for maximum impact.',
+    price: '950 KES',
+    category: 'Apparel',
+    imageUrl: 'https://images.unsplash.com/photo-1513789181297-6f2ec112c0bc?auto=format&fit=crop&q=80&w=800',
+    link: '#',
+    colors: ['Neon Black', 'Pure White'],
+    sizes: ['L', 'XL', 'XXL']
+  }
+];
+
 export const TESTIMONIALS: Testimonial[] = [
   {
     id: 't1',
@@ -108,7 +155,7 @@ export const FAQS: FAQItem[] = [
   },
   {
     question: "How do I get started on a project with you?",
-    answer: "Simply reach out through email at nicknjau@nicknjau.store with your project details and timeline."
+    answer: "Simply reach out through email at sphynick@gmail.com with your project details and timeline."
   },
   {
     question: "Are your projects open source?",
