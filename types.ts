@@ -3,9 +3,10 @@ export interface Project {
   id: string;
   title: string;
   description: string;
+  problem: string;
   role: string;
   tools: string[];
-  outcomes: string[];
+  impact: string[];
   link: string;
   imageUrl: string;
 }

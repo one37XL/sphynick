@@ -50,7 +50,6 @@ const Navbar: React.FC = () => {
   const navLinks = [
     { name: 'Portfolio', href: '#projects' },
     { name: 'Products', href: '#products' },
-    { name: 'Hoodies', href: '/hoodies', isExternal: true },
     { name: 'Impact', href: '#testimonials' },
     { name: 'About', href: '#about' },
   ];
@@ -59,55 +58,36 @@ const Navbar: React.FC = () => {
     <nav className={`fixed w-full z-50 transition-all duration-300 ${isScrolled || location.pathname !== '/' ? 'glass shadow-sm py-3' : 'bg-transparent py-5'}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
-          <Link to="/" className="flex items-center gap-3 group">
-            <div className={`transition-all duration-300 ${isScrolled || location.pathname !== '/' ? 'scale-90' : 'scale-100'}`}>
-              <svg width="40" height="40" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect width="100" height="100" rx="20" fill={isScrolled || location.pathname !== '/' ? "#1e3a8a" : "white"} />
-                <path d="M30 70V30H40L60 55V30H70V70H60L40 45V70H30Z" fill={isScrolled || location.pathname !== '/' ? "white" : "#1e3a8a"} />
-                <path d="M20 20L10 30V70L20 80" stroke={isScrolled || location.pathname !== '/' ? "#14b8a6" : "white"} strokeWidth="4" strokeLinecap="round" />
-                <path d="M80 80L90 70V30L80 20" stroke={isScrolled || location.pathname !== '/' ? "#14b8a6" : "white"} strokeWidth="4" strokeLinecap="round" />
-              </svg>
-            </div>
-            <span className={`font-bold text-xl tracking-tight hidden sm:block ${isScrolled || location.pathname !== '/' ? 'text-gray-900' : 'text-white'}`}>
-              Nick Njau
+          <Link to="/" className="flex items-center gap-2 group">
+            <span className={`font-black text-2xl tracking-tighter uppercase ${isScrolled || location.pathname !== '/' ? 'text-[#141414]' : 'text-white'}`}>
+              NICK NJAU <span className="text-[#F27D26]">.</span>
             </span>
           </Link>
 
           {/* Desktop Links */}
-          <div className="hidden md:flex items-center space-x-6">
+          <div className="hidden md:flex items-center space-x-8">
             {navLinks.map((link) => (
-              link.isExternal ? (
-                <Link
-                  key={link.name}
-                  to={link.href}
-                  onClick={() => setIsMenuOpen(false)}
-                  className={`text-sm font-medium transition-colors ${isScrolled || location.pathname !== '/' ? 'text-gray-600 hover:text-blue-600' : 'text-gray-100 hover:text-white'}`}
-                >
-                  {link.name}
-                </Link>
-              ) : (
-                <a
-                  key={link.name}
-                  href={link.href}
-                  onClick={(e) => handleNavClick(e, link.href)}
-                  className={`text-sm font-medium transition-colors ${isScrolled || location.pathname !== '/' ? 'text-gray-600 hover:text-blue-600' : 'text-gray-100 hover:text-white'}`}
-                >
-                  {link.name}
-                </a>
-              )
+              <a
+                key={link.name}
+                href={link.href}
+                onClick={(e) => handleNavClick(e, link.href)}
+                className={`text-[10px] font-black uppercase tracking-[0.2em] transition-colors ${isScrolled || location.pathname !== '/' ? 'text-gray-600 hover:text-[#F27D26]' : 'text-gray-100 hover:text-[#F27D26]'}`}
+              >
+                {link.name}
+              </a>
             ))}
             <div className="flex items-center gap-3">
               <a 
                 href="https://wa.me/254769504732"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-green-600 text-white px-4 py-2 rounded-full text-xs font-bold hover:bg-green-700 transition-all flex items-center gap-2 shadow-lg shadow-green-600/20"
+                className="bg-[#F27D26] text-white px-5 py-2.5 rounded-full text-xs font-black uppercase tracking-widest hover:bg-white hover:text-black transition-all flex items-center gap-2 shadow-xl shadow-[#F27D26]/20"
               >
                 Message me on WhatsApp
               </a>
               <a 
                 href="mailto:sphynick@gmail.com"
-                className={`text-xs font-bold transition-all px-4 py-2 rounded-full border ${isScrolled || location.pathname !== '/' ? 'border-gray-200 text-gray-700 hover:bg-gray-50' : 'border-white/20 text-white hover:bg-white/10'}`}
+                className={`text-xs font-black uppercase tracking-widest transition-all px-5 py-2.5 rounded-full border ${isScrolled || location.pathname !== '/' ? 'border-gray-200 text-gray-700 hover:bg-[#141414] hover:text-white' : 'border-white/20 text-white hover:bg-white/10'}`}
               >
                 Email
               </a>
@@ -137,25 +117,14 @@ const Navbar: React.FC = () => {
         <div className="md:hidden glass border-t border-gray-200 animate-in slide-in-from-top-4 duration-200">
           <div className="px-4 pt-2 pb-6 space-y-2">
             {navLinks.map((link) => (
-              link.isExternal ? (
-                <Link
-                  key={link.name}
-                  to={link.href}
-                  onClick={() => setIsMenuOpen(false)}
-                  className="block px-3 py-4 text-base font-medium text-gray-700 border-b border-gray-100"
-                >
-                  {link.name}
-                </Link>
-              ) : (
-                <a
-                  key={link.name}
-                  href={link.href}
-                  onClick={(e) => handleNavClick(e, link.href)}
-                  className="block px-3 py-4 text-base font-medium text-gray-700 border-b border-gray-100"
-                >
-                  {link.name}
-                </a>
-              )
+              <a
+                key={link.name}
+                href={link.href}
+                onClick={(e) => handleNavClick(e, link.href)}
+                className="block px-3 py-4 text-xs font-black uppercase tracking-[0.2em] text-[#141414] border-b border-gray-100"
+              >
+                {link.name}
+              </a>
             ))}
             <div className="pt-4 px-3 space-y-3">
               <a 
@@ -163,14 +132,14 @@ const Navbar: React.FC = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => setIsMenuOpen(false)}
-                className="block w-full text-center bg-green-600 text-white px-5 py-3 rounded-xl font-semibold"
+                className="block w-full text-center bg-[#F27D26] text-white px-5 py-4 rounded-2xl font-black uppercase tracking-widest shadow-xl shadow-[#F27D26]/20"
               >
                 Message me on WhatsApp
               </a>
               <a 
                 href="mailto:sphynick@gmail.com"
                 onClick={() => setIsMenuOpen(false)}
-                className="block w-full text-center border border-gray-200 text-gray-700 px-5 py-3 rounded-xl font-semibold"
+                className="block w-full text-center border border-gray-100 text-[#141414] px-5 py-4 rounded-2xl font-black uppercase tracking-widest bg-gray-50"
               >
                 Email Nick
               </a>

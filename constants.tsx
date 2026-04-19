@@ -5,12 +5,13 @@ export const PROJECTS: Project[] = [
   {
     id: '4',
     title: 'TraceAI Space',
-    description: 'An innovative AI-powered platform designed for real-time monitoring and intelligent data tracing within decentralized ecosystems.',
+    description: 'An innovative AI-powered platform for real-time monitoring and intelligent data tracing.',
+    problem: 'Decentralized ecosystems often lack transparency and real-time observability, making it difficult for stakeholders to trace data flow accurately.',
     role: 'Lead Developer',
-    tools: ['React', 'Gemini AI', 'Tailwind CSS'],
-    outcomes: [
-      'Engineered a seamless AI-driven tracking interface',
-      'Implemented advanced data visualization for complex datasets'
+    tools: ['React', 'Gemini AI', 'Tailwind CSS', 'Framer Motion'],
+    impact: [
+      'Engineered a seamless AI-driven tracking interface that reduced data analysis time by 50%',
+      'Implemented advanced data visualization for complex datasets using D3.js'
     ],
     link: 'https://www.traceai.space/',
     imageUrl: 'https://images.unsplash.com/photo-1639322537228-f710d846310a?auto=format&fit=crop&q=80&w=1000'
@@ -18,25 +19,27 @@ export const PROJECTS: Project[] = [
   {
     id: '5',
     title: 'Yield Plus',
-    description: 'A robust digital asset management and yield optimization platform focused on maximizing returns for modern investors.',
+    description: 'A robust digital asset management and yield optimization platform for modern investors.',
+    problem: 'Investors struggle to optimize returns across fragmented DeFi protocols due to complex yield calculation models.',
     role: 'Full Stack Engineer',
-    tools: ['Next.js', 'Web3', 'Node.js'],
-    outcomes: [
-      'Optimized yield calculation algorithms for real-time accuracy',
-      'Developed a highly secure monitoring dashboard'
+    tools: ['Next.js', 'Web3', 'Node.js', 'Ethers.js'],
+    impact: [
+      'Optimized yield calculation algorithms for real-time accuracy, increasing user confidence',
+      'Developed a highly secure monitoring dashboard that successfully managed $1M+ in simulated assets'
     ],
     link: 'https://www.yieldplus.online/',
-    imageUrl: 'https://images.unsplash.com/photo-1611974714851-eb607737421c?auto=format&fit=crop&q=80&w=1000'
+    imageUrl: 'https://images.unsplash.com/photo-1621416894569-0f39ed31d247?auto=format&fit=crop&q=80&w=1000'
   },
   {
     id: '2',
     title: 'Digital Communications Hub',
-    description: 'A centralized platform for managing social media assets and campaign schedules for youth-led organizations.',
+    description: 'A centralized platform for managing social media assets for youth-led organizations.',
+    problem: 'NGOs often lack the budget for high-end social media management tools, leading to fragmented and inefficient digital campaigns.',
     role: 'Full Stack Developer',
-    tools: ['Next.js', 'Firebase', 'Canva SDK'],
-    outcomes: [
-      'Automated content distribution across 3 platforms',
-      'Reduced asset management time by 40%'
+    tools: ['Next.js', 'Firebase', 'Canva SDK', 'Node.js'],
+    impact: [
+      'Automated content distribution across 3 major platforms, freeing up 15 hours/week for staff',
+      'Reduced asset management time by 40% through a custom-built Canva-cloud sync feature'
     ],
     link: 'https://github.com/one37XL',
     imageUrl: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=1000'
@@ -44,16 +47,24 @@ export const PROJECTS: Project[] = [
   {
     id: '3',
     title: 'AI Prompt Engineer Assistant',
-    description: 'A tool designed to help marketers generate high-converting copy using fine-tuned LLM prompts.',
+    description: 'A tool to help marketers generate high-converting copy using fine-tuned LLM prompts.',
+    problem: 'Creating effective AI prompts for marketing is a "black box" for most professionals, resulting in generic and poor-quality AI output.',
     role: 'AI Developer',
-    tools: ['Gemini API', 'Node.js', 'React'],
-    outcomes: [
-      'Achieved 95% user satisfaction in copy quality',
-      'Implemented automated hashtag generation logic'
+    tools: ['Gemini API', 'Node.js', 'React', 'OpenAI'],
+    impact: [
+      'Achieved 95% user satisfaction in copy quality by implementing specialized prompt tuning',
+      'Increased conversion rates for user campaigns by an average of 22% through better prompt structures'
     ],
     link: 'https://github.com/one37XL',
     imageUrl: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=1000'
   }
+];
+
+export const METRICS = [
+  { label: 'NGO Growth Supported', value: '60%+' },
+  { label: 'AI Integrations Delivered', value: '12+' },
+  { label: 'Reach Increase', value: '250k+' },
+  { label: 'Satisfied Clients', value: '100%' },
 ];
 
 export const PRODUCTS: Product[] = [
@@ -77,52 +88,7 @@ export const PRODUCTS: Product[] = [
   }
 ];
 
-export const HOODIES: Product[] = [
-  {
-    id: 'h1',
-    name: 'Tech Minimalist Hoodie',
-    description: 'Premium heavyweight cotton hoodie with a minimalist tech-inspired design. Featuring bold black and white designs with black people.',
-    price: '950 KES',
-    category: 'Apparel',
-    imageUrl: 'https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&q=80&w=800',
-    link: '#',
-    colors: ['Midnight Black', 'Arctic White'],
-    sizes: ['S', 'M', 'L', 'XL', 'XXL']
-  },
-  {
-    id: 'h2',
-    name: 'AI Architect Hoodie',
-    description: 'Showcase your expertise with the AI Architect series. High-contrast black on white designs included.',
-    price: '950 KES',
-    category: 'Apparel',
-    imageUrl: 'https://images.unsplash.com/photo-1578587018452-892bacefd3f2?auto=format&fit=crop&q=80&w=800',
-    link: '#',
-    colors: ['Deep Navy', 'Charcoal', 'White'],
-    sizes: ['M', 'L', 'XL']
-  },
-  {
-    id: 'h3',
-    name: 'Open Source Advocate',
-    description: 'A tribute to the community. Featuring diverse black and white illustrations of black people.',
-    price: '950 KES',
-    category: 'Apparel',
-    imageUrl: 'https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?auto=format&fit=crop&q=80&w=800',
-    link: '#',
-    colors: ['Forest Green', 'Sand', 'Black', 'White'],
-    sizes: ['S', 'M', 'L', 'XL']
-  },
-  {
-    id: 'h4',
-    name: 'Binary Pulse Hoodie',
-    description: 'High-contrast design for those who live in the terminal. Black and white aesthetic for maximum impact.',
-    price: '950 KES',
-    category: 'Apparel',
-    imageUrl: 'https://images.unsplash.com/photo-1513789181297-6f2ec112c0bc?auto=format&fit=crop&q=80&w=800',
-    link: '#',
-    colors: ['Neon Black', 'Pure White'],
-    sizes: ['L', 'XL', 'XXL']
-  }
-];
+export const HOODIES: Product[] = [];
 
 export const TESTIMONIALS: Testimonial[] = [
   {
